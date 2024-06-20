@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+
+:root{
+    --box-height: 6em;
+    --font-Reddit: "Reddit Mono", monospace;
+}
+
+#extension-element-checker{
+    width: 100% !important;
+    height: var(--box-height) !important;
+    background-color: #222831 !important;
+    box-shadow: 0 10px 20px rgb(0,0,0,0.8) !important;
+    position: fixed;
+    left: 0;
+    right: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2147483648;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.extension-container--top {
+    top: 0;
+}
+
+.extension-container--bottom {
+    bottom: 0;
+}
+
+#extension-element-checker > * {
+    pointer-events: none;
+}
+
+#extension-element-checker #extension-element-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10px 0 10px;
+    height: 100% !important;
+    font-family: var(--font-Reddit) !important;
+}
+
+#extension-element-checker #extension-element-info > * {
+    font-size: 20px !important;
+    margin: 10px;
+}
+
+#extension-element-checker #extension-element-info #extension-element-tag {
+    color: orange;
+}
+
+#extension-element-checker #extension-element-info #extension-element-attr {
+    width: 80% !important;
+    /* background-color: var(--attributes-section-bg); */
+    border-radius: 7px;
+    overflow-y: hidden;
+    overflow-x: auto;
+    pointer-events: auto;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.mouse-move {
+    transition: background .2s;
+    background-color: rgba(236, 247, 25, 0.2) !important;
+}
+
+.extension-hide {
+    display: none;
+}

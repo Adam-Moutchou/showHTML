@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>peekHTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="root">
+        <!--The root will contain 4 main sections-->
+        <!--1/ header-->
+        <div id="header" class="section">
+            <h1 style="font-size: 35px;">peekHTML</h1>
+            <p style="font-size: 15px;padding: 10px;">&#40;View the information of HTML elements easily !&#41;</p>
+        </div>
+        <!--2/ filter-->
+        <div id="Filter" class="section">
+            <h2>Filter</h2>
+            <div style="text-align: center;">
+                <input type="search" name="search" id="search-for-attr" placeholder="example: placeholder...">
+            </div>
+            <div class="filterer">
+                <!--Elements here-->
+            </div>
+        </div>
+        <!--3/ visibility-->
+        <footer id="bottom-section" class="section">
+            <div id="position" class="half">
+                <select id="container-position">
+                    <option disabled>Position</option>
+                    <option>top</option>
+                    <option>bottom</option>
+                </select>
+            </div>
+            <label id="visibility" class="half" for="hide">
+                Hide
+                <input type="checkbox" name="visibility" id="hide">
+                <span class="checkmark"></span>
+            </label>
+        </footer>
+    </div>
+    <script src="/public/js/popup.js" type="module"></script>
+</body>
+</html>
